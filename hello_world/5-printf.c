@@ -1,3 +1,11 @@
 #include <stdio.h>
-
-	int main(void) { printf(« avec une grammaire correcte, mais le résultat est une œuvre d’art,\n »); return (0); } }
+/**
+ * main - Entry point
+ *
+ * Return: always 0
+ */
+int main(void)
+{
+		printf("with proper grammar, but the outcome is a piece of art,\n");
+			return (0);
+}
