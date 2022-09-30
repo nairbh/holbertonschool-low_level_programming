@@ -1,5 +1,4 @@
-#!/bin/bash
- #include <stdio.h>
+#include <stdio.h>
 
 int main(void) { puts(« La programmation est comme construire un puzzle multilingue
  »); return (0); }
