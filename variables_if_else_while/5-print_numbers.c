@@ -1,19 +1,15 @@
-#include<stdio.h>
-
+#include <unistd.h>
+#include <stdio.h>
+/**
+ *main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	int i;
+	write(1, "0123456789", 10);
+	putchar('\n');
 
-	printf("Print a comma-separated list of numbers from 1 to 10 :\n");
-	for (i = 0; i <= 10; i++)
-{
-	printf("%d", i);
-
-	if (i < 10)
-
-	printf("\n");
-}
-
-
+	return (0);
 }
