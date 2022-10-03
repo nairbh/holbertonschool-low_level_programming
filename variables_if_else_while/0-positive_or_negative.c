@@ -31,7 +31,7 @@ else if (n == 1)
 printf("%d is zero\n", n);
 }
 
-while (n < 0)
+else
 
 {
 printf("%d is negative\n", n);
