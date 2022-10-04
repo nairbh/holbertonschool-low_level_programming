@@ -2,6 +2,9 @@
 #include <unistd.h>
 /*
  * print Base16
+ *
+ * Return: Always 0 (Success)
+ *
  */
 
 int main(void)
