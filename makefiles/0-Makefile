@@ -1,0 +1,2 @@
+ll:
+		gcc -o school main.c school.c m.h
