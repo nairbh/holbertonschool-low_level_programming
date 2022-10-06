@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 /*
- * File: 8-print_base16.c
- * main - Prints all the numbers of base 16 in lowercase.
+ *main - Entry point
  *
- * Return: Always 0 (Success)
- *
+ *ft_number - Entry point
+ *Return: Always 0 (Success)
  */
 
 int main(void)
