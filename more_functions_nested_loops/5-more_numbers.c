@@ -1,9 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /*
-*Write a function that prints 10 times the numbers, from 0 to 14.
-*@c: number
-*Return: Alway 0.
+*more_numbers - prints the numbers
 */
 void more_numbers(void)
 {
