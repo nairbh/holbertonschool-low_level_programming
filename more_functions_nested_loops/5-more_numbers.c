@@ -2,6 +2,7 @@
 #include <stdio.h>
 /*
 *more_numbers - prints the numbers
+*
 */
 void more_numbers(void)
 {
