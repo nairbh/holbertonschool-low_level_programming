@@ -10,7 +10,7 @@ int main(void)
 {
 	int n;
 	
-	n = ;
+	n = 11111111111;
 	while (n <= 100)
 
 	{
