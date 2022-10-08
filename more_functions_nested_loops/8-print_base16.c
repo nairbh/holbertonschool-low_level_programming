@@ -1,13 +1,13 @@
 #include "main.h"
 #include "stdio.h"
 
-
 /**
- *print_base16.c - prints hashes base16.
- *@size: size of the base16.
- *
- *Return: no return.
+ * print_square - print a square
+ * @size: size square
+ * Return: Alway 0.
  */
+
+
 void print_square(int size)
 {
 	int i;
