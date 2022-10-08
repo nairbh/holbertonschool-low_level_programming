@@ -3,7 +3,7 @@
 
 
 /**
- *print_base16 - prints hashes base16.
+ *print_base16.c - prints hashes base16.
  *@size: size of the base16.
  *
  *Return: no return.
