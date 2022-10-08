@@ -3,8 +3,8 @@
 
 
 /**
- *print_square - prints hashes squares.
- *@size: size of the square.
+ *print_base16 - prints hashes base16.
+ *@size: size of the base16.
  *
  *Return: no return.
  */
