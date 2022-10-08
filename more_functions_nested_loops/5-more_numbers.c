@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /*
- * print_numbers - prints the numbers, from 0 to 10, followed by a new line.
+ * print_numbers.c - prints the numbers, from 0 to 10, followed by a new line.
  */
 void more_numbers(void)
 {
