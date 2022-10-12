@@ -1,13 +1,24 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * Write a function that prints a string, followed by a new line, to stdout
  *
- * @:  _puts
+ * @_puts(char *str)
  */
 void _puts(char *str)
-{
-	char sdout[] = "String";
 
-	return (sdout);
+{
+	int count = 0;
+
+	while (count >= 0)
+	{	if
+		(str[count] == '\0')
+
+		{	_putchar('\n');
+		break;
+	}
+
+	_putchar(str[count]);
+	count++;
+	}
 }
