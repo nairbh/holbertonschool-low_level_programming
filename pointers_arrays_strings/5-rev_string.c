@@ -1,8 +1,8 @@
 #include "main.h"
 
 /*
- * rev_string - reverse string
  * _strlen - length of string
+ *@s: pointer
  * Return: _strlen
  */
 int _strlen(char *s)
@@ -17,6 +17,11 @@ int _strlen(char *s)
 	return (strlen);
 }
 
+/*
+ * rev_string - reverse string
+ * @s: pointer
+ * @s : string
+ */
 void rev_string(char *s)
 {
 		int i;
