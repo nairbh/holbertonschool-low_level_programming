@@ -3,7 +3,7 @@
 /*
  * _strlen - length of string
  *  @s: pointer
- *  Return: _strlen
+ *  rev_string - reverse string
  */
 int _strlen(char *s)
 {
