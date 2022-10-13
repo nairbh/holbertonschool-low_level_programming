@@ -2,7 +2,7 @@
 
 /*
  * rev_string - reverses a string.
- *  @s: input string.
+ *  @s: pointer.
  *  Return : no return
  */
 int _strlen(char *s)
