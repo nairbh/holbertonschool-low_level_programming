@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * 6. Half the lies they tell about me aren't true
  * puts2 - Write a function that prints every other character of a string
  * @str : string
  */
