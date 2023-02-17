@@ -2,6 +2,8 @@
 
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,");
+char hi[] = "with proper grammar, but the outcome is a piece of art,";
+
+printf("%s", hi);
 return (0);
 }
