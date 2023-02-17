@@ -15,13 +15,13 @@ float op;
 
 printf("Size of a char: %zu byte(s) \n", sizeof(az));
 
-printf("Size of a char: %zu byte(s) \n", sizeof(er));
+printf("Size of an int: %zu byte(s) \n", sizeof(er));
 
-printf("Size of a char: %zu byte(s) \n", sizeof(ty));
+printf("Size of a long int: %zu byte(s) \n", sizeof(ty));
 
-printf("Size of a char: %zu byte(s) \n", sizeof(ui));
+printf("Size of a long long int: %zu byte(s) \n", sizeof(ui));
 
-printf("Size of a char: %zu byte(s) \n", sizeof(op));
+printf("Size of a float: %zu byte(s) \n", sizeof(op));
 
 return (0);
 }
