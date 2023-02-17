@@ -4,10 +4,12 @@
  *
  * Return: Always 0 (Success)
  */
-#include <stdio.h>
+int main(void)
+{
 
-int main(void) {
-char  array[]="/"Programming is like building a multilingual puzzle;
+char array[] = "\"Programming is like building a multilingual puzzle";
+
 puts(array);
+
 return (0);
 }
