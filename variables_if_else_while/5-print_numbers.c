@@ -12,6 +12,8 @@ int ch;
 
 for (ch = 0; ch <= 9; ch++)
 
-printf("%d\n",ch);
+printf("%d", ch);
+}
+printf("\n");
 return (0);
 }
