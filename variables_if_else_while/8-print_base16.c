@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	int ch;
 
-for (i = 0; i <= 16; i++)
+for (i = 0; i <= 15; i++)
 {
 if (i < 10)
 
