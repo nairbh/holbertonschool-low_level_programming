@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-int _abs(int)
+int _abs(int l)
 {
 	int b;
 
-	b = abs(-1);
+	b = abs(l);
 
 	return (b);
 }
