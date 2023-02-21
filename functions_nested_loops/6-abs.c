@@ -3,9 +3,9 @@
 
 int _abs(int)
 {
-	int b = -1;
+	int b;
 
-	b = _abs(b);
+	b = _abs(-1);
 
 	return (b);
 }
