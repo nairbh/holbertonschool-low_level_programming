@@ -5,7 +5,7 @@ int _abs(int)
 {
 	int b;
 
-	b = _abs(-1);
+	b = abs(-1);
 
 	return (b);
 }
