@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - main function
  *
- * Return: Always 0.
+ * @c: character to compare
+ *
+ * Return: 1 if true, 0 if false
+ *
  */
-
 int _isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
