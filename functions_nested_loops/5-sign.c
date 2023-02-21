@@ -23,9 +23,8 @@ int print_sign(int n)
 	_putchar('0');
 
 	}
-	if { int i = -1;
-
-		(n < 0)
+	if (n < 0)
+	{ i = -1;
 		_putchar('-');
 
 		return (i);
