@@ -16,14 +16,14 @@ int print_sign(int n)
 	  _putchar(i);
 	}
 
-	if (n == 0)
+	else if (n == 0)
 	{  int i = 0;
-		_putchar('0');
-		_putchar(i);
+	_putchar(n);
+
 	}
 
-	if (n < 0)
-	{
+	else
+
 	return (-1);
-	}
+	
 }
