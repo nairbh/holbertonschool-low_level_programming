@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 #include <math.h>
-
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 int print_last_digit(int r)
 {
 	r = r % 10;
