@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 
-
-int print_last_digit(int)
+int print_last_digit(int r)
 {
-	int r;
+	r = r % 10;
 
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + &r);
-    _putchar('\n');
-    return (0);
+	if (r < 0)
+	{
+		r = r * (-1);
+
+		_putchar(r + '0');
+		return (r);
+	}
+
+	_putchar(r + '0');
+
+	return (r);
 }
