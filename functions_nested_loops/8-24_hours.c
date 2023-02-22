@@ -11,14 +11,14 @@ for (int heure = 0; heure < 24; heure++)
 
 			for (int min = 0; min < 60; min++)
 			{
-				putchar(heure / 10 + '0');
-				putchar(heure % 10 + '0');
-				putchar(':');
+				_putchar(heure / 10 + '0');
+				_putchar(heure % 10 + '0');
+				_putchar(':');
 
-				putchar(min / 10 + '0');
-				putchar(min % 10 + '0');
+				_putchar(min / 10 + '0');
+				_putchar(min % 10 + '0');
 
-				putchar('\n');
+			_putchar('\n');
 			}
 
 	}
