@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _abs - print out the absolute value of number
- * @b: number
- * @l: number
- * Return: int absolute value
+ * _abs - Computes the absolute value
+ * of an integer.
+ *
+ * @l: input number as an integer.
+ *
+ * Return: absolute value
  */
 int _abs(int l)
 {
