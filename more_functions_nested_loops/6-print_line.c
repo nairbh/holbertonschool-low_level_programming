@@ -16,7 +16,7 @@ void print_line(int n)
 
 		for (j = 0; j < n; j++)
 		{
-			putchar(45);
+			putchar('_');
 		}
 			putchar('\n');
 
