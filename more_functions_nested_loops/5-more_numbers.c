@@ -5,9 +5,12 @@
 void more_numbers(void)
 
 {
-	for (int i = 0; i < 10; i++)
+	int i;
+
+	for (i = 0; i < 10; i++)
 	{
-		for (int a = 0; a <= 14; a++)
+		int a;
+		for (a = 0; a <= 14; a++)
 		{
 			if ( a > 9)
 			{
