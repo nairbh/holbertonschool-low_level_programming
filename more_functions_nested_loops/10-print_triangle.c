@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+*print_triangle - prints a triangle
+*@size: Number;
+*/
 
 void print_triangle(int size)
 {

@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * print_diagonal - Write a function that checks for uppercase character.
+ * @n : number
+ */
 void print_diagonal(int n)
 
 {
