@@ -9,9 +9,9 @@ void print_rev(char *s)
 	while (*(s + a) != '\0')
 	a++;
 
-	int len;
+	int b;
 
-	for (a = len; a >= len; a--)
-	len++;
-		printf("%c\n", *(s + len));
+	for ( b = a -1; b >= 0; b--)
+
+		printf("%s\n", *(s + b));
 }
