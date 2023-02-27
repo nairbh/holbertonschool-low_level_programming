@@ -6,5 +6,5 @@ void print_rev(char *s)
 {
 	
 
-	printf("%s",rev(*s));
+	printf("%s\n",rev(s));
 }
