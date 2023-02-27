@@ -3,8 +3,11 @@
 
 void print_rev(char *s)
 
-{
-	
+{	
+	int a = 0;
 
-	printf("%s\n",rev(s));
+	while (*(s + a) != '\0')
+
+		a++;
+	printf("%s\n", rev(str));
 }
