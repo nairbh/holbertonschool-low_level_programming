@@ -12,20 +12,20 @@ void puts_half(char *str)
 	loong = strlen(str);
 
 	if (loong % 2 == 0)
-{
+
 	{
 		half = loong / 2;
 	}
 
-	else if 
+	else
 		{
 			half = loong -1 / 2;
 		}
-}
+
 
 	for (i = half; i < loong; i++)
 	{
-		printf("%c",str[i]);
+		printf("%s",str[i]);
 	}
 
 	putchar('\n');
