@@ -4,13 +4,9 @@
 int _strlen(char *s)
 
 {
-	char *string;
+	int count = 0;
 
-	int len;
+	while (*(s + count) != \0)
 
-	string = "first strlen!";
-
-	len = _strlen(string);
-
-	printf("%d\n", _strlen);
+		return (count);
 }
