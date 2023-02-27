@@ -10,7 +10,7 @@ int _strlen(char *s)
 
 	string = "first strlen!";
 
-	longeur = _strlen(string);
+	longueur = _strlen(string);
 
 	printf("%d\", string);
 }
