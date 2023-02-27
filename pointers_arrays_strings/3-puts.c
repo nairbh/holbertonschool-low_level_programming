@@ -9,5 +9,5 @@ void _puts(char *str)
 
 	ch = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 
-	 puts(ch, stdout);
+	_puts(ch);
 }
