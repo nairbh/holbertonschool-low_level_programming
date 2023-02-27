@@ -6,11 +6,11 @@ int _strlen(char *s)
 {
 	char *string;
 
-	int longueur;
+	int len;
 
 	string = "first strlen!";
 
-	longueur = _strlen(*string);
+	len = _strlen(string);
 
-	printf("%d\n", &string);
+	printf("%d\n", _strlen);
 }
