@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	for (b = a -1; b >= 0; b--)
 
-		printf("%s", *(s + b));
+		printf("%c", *(s + b));
 	}
 	printf("\n");
 }
