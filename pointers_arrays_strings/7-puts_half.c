@@ -25,7 +25,7 @@ void puts_half(char *str)
 
 	for (i = half; i < loong; i++)
 	{
-		printf("%s",str[i]);
+		printf("%d",str[i]);
 	}
 
 	putchar('\n');
