@@ -13,5 +13,5 @@ void print_rev(char *s)
 
 	for (len = 0; len >= a; a--)
 
-		printf("%s", *(s + len));
+		printf("%c\n", *(s + len));
 }
