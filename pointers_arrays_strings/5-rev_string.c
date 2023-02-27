@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include "main.h"
-
 void rev_string(char *s)
 {
-	{	
-	int a = 0;
+	int len = 0;
 
-	while (*(s + a) != '\0')
-	a++;
+	while (s[len] != '\0')
+		len++;
+
+	int i = 0;
+
+	for(i < len\2; i++)
 	{
-	int b;
+		char tmp = s[i];
 
-	for (b = a -1; b >= 0; b--)
+		s[i] = s[len - i -1];
 
-		printf("%c", *(s + b));
+		s[len -i -1] = tmp;
 	}
-	printf("\n");
 }
-}
-
