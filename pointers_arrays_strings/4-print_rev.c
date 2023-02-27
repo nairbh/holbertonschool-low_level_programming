@@ -7,7 +7,11 @@ void print_rev(char *s)
 	int a = 0;
 
 	while (*(s + a) != '\0')
+	a++;
 
-		a++;
-	printf("%s\n", strrev*(str));
+	int len;
+
+	for (len = 0; len >= a; a--)
+
+		printf("%s", *(s + len));
 }
