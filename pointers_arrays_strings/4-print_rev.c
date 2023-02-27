@@ -9,5 +9,5 @@ void print_rev(char *s)
 	while (*(s + a) != '\0')
 
 		a++;
-	printf("%s\n", print_rev(str));
+	printf("%s\n", strrev*(str));
 }
