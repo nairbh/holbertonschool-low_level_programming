@@ -12,5 +12,5 @@ int _strlen(char *s)
 
 	longueur = _strlen(string);
 
-	printf("%d\n", string");
+	printf("%d\n", string);
 }
