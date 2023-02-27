@@ -5,5 +5,11 @@
 
 void swap_int(int *a, int *b)
 {
-	swap(&a, &b);
+	int time;
+
+	time = *a;
+
+	*a = *b;
+
+	*b = time;
 }
