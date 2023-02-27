@@ -8,11 +8,12 @@ void print_rev(char *s)
 
 	while (*(s + a) != '\0')
 	a++;
-
+	{
 	int b;
 
 	for (b = a -1; b >= 0; b--)
 
 		printf("%c", *(s + b));
+	}
 	printf("\n");
 }
