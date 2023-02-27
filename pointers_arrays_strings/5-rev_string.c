@@ -9,7 +9,7 @@ void rev_string(char *s)
 	a++;
 
 	{
-		printf("%c", sstrrev(s[a]));
+		printf("%c", strrev(s[a]));
 	}
 
 	printf("\n");
