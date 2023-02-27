@@ -9,7 +9,7 @@ void puts_half(char *str)
 
     for (i = half; i < len; i++)
     {
-        putchar(str[i]);
+        printf("%x", str[i]);
     }
 
     putchar('\n');
