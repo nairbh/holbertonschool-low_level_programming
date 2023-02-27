@@ -5,15 +5,11 @@ void rev_string(char *s)
 {
 	int a = 0;
 
-	while (*(s + a) != '\0')
+	while (s [a] != '\0')
 	a++;
 
 	{
-		int j = 0;
-
-		for (a = j -1; j >= 0; j--)
-
-			printf("%c", *(s + j));
+		printf("%s", s [a]);
 	}
 
 	printf("\n");
