@@ -11,6 +11,4 @@ void puts2(char *str)
 
 		i += 2;
 	}
-
-	printf("\n");
 }
