@@ -9,7 +9,7 @@ void rev_string(char *s)
 
 	int i = 0;
 
-	for(i < len\2; i++)
+	for(i < len/2; i++)
 	{
 		char tmp = s[i];
 
