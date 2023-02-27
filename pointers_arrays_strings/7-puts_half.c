@@ -7,8 +7,10 @@ void puts_half(char *str)
     int half = len / 2;
     int i;
 
-    for (i = half; i < len; i++)
+    for (i = half; i <= len; i++)
     {
         putchar(str[i]);
     }
+
+    putchar('\n');
 }
