@@ -3,14 +3,26 @@
 #include <string.h>
 void puts_half(char *str)
 {
-    int len = strlen(str);
-    int half = len / 2;
-    int i;
+ loong = strlen(str);
 
-    for (i = half; i < len; i++)
-    {
-        printf("%c", str[i]);
-    }
+	if (loong % 2 == 0 != '\0')
+{
+	{
+		half = loong / 2;
+	}
 
-    putchar('\n');
+	else 
+	{
+		half = loong -1 / 2;
+	}
+		{
+			half = loong -1 / 2;
+		}
+}
+
+	for (i = half; i < loong; i++)
+	{
+		printf("%c",str[i]);
+	}
+	putchar('\n');
 }
