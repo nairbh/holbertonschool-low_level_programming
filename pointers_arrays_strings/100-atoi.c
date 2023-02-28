@@ -6,5 +6,14 @@
 int _atoi(char *s)
 
 {
-	return (atoi(s));
+	int signe = 1, i = 0,
+	
+	    while(*s < '0' || *s > '9')
+
+	    {
+		    if (*s++ == - 1)
+		    {
+			    signe = -1;
+		    }
+
 }
