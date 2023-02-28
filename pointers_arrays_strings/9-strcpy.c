@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <string.h>
 char *_strcpy(char *dest, char *src)
 
 {	char *p = src;
