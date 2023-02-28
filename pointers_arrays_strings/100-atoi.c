@@ -6,7 +6,7 @@
 int _atoi(char *s)
 
 {
-char dest:
+char dest;
 	size_t len = strlen(s);
 
 	strncpy(dest, s)
