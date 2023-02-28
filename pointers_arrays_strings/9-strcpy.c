@@ -13,9 +13,10 @@ char *_strcpy(char *dest, char *src)
 		len++;
 		p++;
 	}
+	
+	strncpy(dest, src);
 
-	len = dest;
-
+		
 
 	return dest;
 }
