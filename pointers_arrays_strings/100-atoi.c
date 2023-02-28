@@ -6,15 +6,9 @@
 int _atoi(char *s)
 
 {
-	char dest [10000];
+	int x = 0;
 
-	size_t len = strlen(s);
+	x = atoi(s);
 
-	strncpy(dest, s, len);
-	
-	int resultat = atoi(dest);
-
-	printf("%d",resulat);
-
-	return (resulat);
+	return (x);
 }
