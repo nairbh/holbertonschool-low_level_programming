@@ -3,6 +3,10 @@
 #include <string.h>
 void puts_half(char *str)
 {
+
+	int loong;
+	int half;
+
  loong = strlen(str);
 
 	if (loong % 2 == 0 != '\0')
