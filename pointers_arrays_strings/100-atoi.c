@@ -6,11 +6,11 @@
 int _atoi(char *s)
 
 {
-	char dest [];
+	char dest [10000];
 
 	size_t len = strlen(s);
 
-	strncpy(dest, s, len)
+	strncpy(dest, s, len);
 	
 	int resultat = atoi(dest);
 
