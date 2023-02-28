@@ -6,7 +6,10 @@
 int _atoi(char *s)
 
 {
-	int num = _atoi(s);
+	int num;
+	size_t len = strlen(s);
+
+	strncpy(num, s)
 
 	printf("%d",num);
 }
