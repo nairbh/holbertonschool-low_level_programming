@@ -8,5 +8,5 @@ int _atoi(char *s)
 {
 	int num = _atoi(s);
 
-	printf("%d",num)
+	printf("%d",num);
 }
