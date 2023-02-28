@@ -3,17 +3,18 @@
 #include <string.h>
 #include <stdlib.h>
 
-int _atoi(char *s)
+int _atoi(char *s) {
+    int sign = 1, num = 0;
 
-{
-	int signe = 1, i = 0,
-	
-	    while(*s < '0' || *s > '9')
+    while (*s && (*s < '0' || *s > '9')) {
+        if (*s++ == '-') {
+            sign = -1;
+        }
+    }
 
-	    {
-		    if (*s++ == - 1)
-		    {
-			    signe = -1;
-		    }
+    while (*s >= '0' && *s <= '9') {
+        num = num * 10 + (*s++ - '0');
+    }
 
+    return num * sign;
 }
