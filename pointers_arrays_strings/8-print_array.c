@@ -13,8 +13,8 @@ void print_array(int *a, int n)
 			printf("%d ", a[i]);
 
 		else 
-		printf("%d ", a[i]);
-
+		printf("%d", a[i]);
+		printf(", ");
 		i++;
 	}
 
