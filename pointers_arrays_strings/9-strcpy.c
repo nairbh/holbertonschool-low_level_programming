@@ -3,20 +3,12 @@
 #include <string.h>
 char *_strcpy(char *dest, char *src)
 
-{	char *p = src;
-
-	int len;
-
-	while (*p != '\0')
-
-	{
-		len++;
-		p++;
-	}
+{
 	
-	strncpy(dest, src);
-
-		
+	size_t len = strlen(src);
+    
+	strncpy(dest, src, len + 1);
 
 	return dest;
 }
+
