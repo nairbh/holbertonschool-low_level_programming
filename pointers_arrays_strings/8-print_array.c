@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+* print_array - print elements of an array;
+* @a: pointer;
+* @n: size of array,
+*/
 void print_array(int *a, int n)
 {
 	int i = 0;

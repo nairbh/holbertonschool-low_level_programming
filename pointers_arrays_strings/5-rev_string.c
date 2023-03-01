@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+/**
+*_strlen - length of string
+* @s: pointer
+* Return: _strlen
+*/
+
 void rev_string(char *s)
 {
 	int len = 0;

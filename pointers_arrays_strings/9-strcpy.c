@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 #include <string.h>
+/**
+* *_strcpy - coppy string
+* @dest: destination
+* @src: source
+* Return: file coppied
+*/
+
 char *_strcpy(char *dest, char *src)
 
 {

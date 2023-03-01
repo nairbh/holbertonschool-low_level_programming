@@ -1,7 +1,10 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
-
+/**
+* puts_half - function that prints half of string
+* @str: string
+*/
 void puts_half(char *str)
 {
 	int len = 0;
