@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_strlen - length of string
-* @s: pointer
-* Return: no return
-*/
+ * rev_string - reverses a string.
+ * @s: input string.
+ * Return: no return.
+ */
 
 void rev_string(char *s)
 {
@@ -14,12 +14,12 @@ void rev_string(char *s)
 	while (s[len] != '\0')
 		len++;
 
-	for(i = 0; i < len / 2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 		char tmp = s[i];
 
 		s[i] = s[len - i - 1];
 
-		s[len -i - 1] = tmp;
+		s[len - i - 1] = tmp;
 	}
 }
