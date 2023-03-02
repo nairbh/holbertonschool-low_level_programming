@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 			 j++;
 		 }
 
-		 if (accept[j] != '\0')
+		 if (accept[j] == '\0')
 		 {
 			 break;
 		 }
