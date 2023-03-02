@@ -8,9 +8,9 @@ unsigned int _strspn(char *s, char *accept)
 
 
 	for (i = 0; s[i] && strchr(accept, s[i]); i++)
-
+	{
 		return (i);
-
+	}
 
 
 }
