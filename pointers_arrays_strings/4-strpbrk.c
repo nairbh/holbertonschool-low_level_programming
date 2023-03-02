@@ -1,19 +1,20 @@
 #include "main.h"
 #include <string.h>
 
-char *_strpbrk(char *s, char *accept) 
+char *_strpbrk(char *s, char *accept)
 
 {
-    while (*s)
+	while (*s)
 
 	{
 
-	if (strchr(accept, *s))
+		if (strchr(accept, *s))
 
-	    return s;
+		return (s);
 
 	s++;
-    }
-    	return NULL;
+	}
+
+	return (NULL);
 }
 
