@@ -4,10 +4,10 @@
 #include <stdlib.h>
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
 
-	for (i = 0; s[i] && strchr(accept, s[i]); i++);
+	for (s[i] && strchr(accept, s[i]); i++);
 
 		return (i);
 	
