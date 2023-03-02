@@ -7,7 +7,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count;
 
 
-	while (count = 0; s[count] && strnlen(accept, s[count], count++)
+	for (count = 0; s[count] && strchr(accept, s[count], count++)
 
 		return (count);
 
