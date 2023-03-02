@@ -13,7 +13,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		strncpy(dest, src, i == '\0');
 	}
-
+	
+	putchar('\n');
 	return (dest);
 }
 
