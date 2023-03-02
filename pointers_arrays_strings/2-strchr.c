@@ -6,7 +6,7 @@ char *_strchr(char *s, char c)
 
 {
 
-	*_memcpy(c, s, 1);
+	memcpy(c, s, 1);
 
 	return (c);
 }
