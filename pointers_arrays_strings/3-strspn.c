@@ -7,7 +7,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int i = 0;
 
 
-	for (s[i] && strchr(accept, s[i]);)
+	for (s[i] && strchr(accept, s[i]););
 	{
 		i++;
 
