@@ -5,14 +5,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
+	 unsigned int j = 0;
 
+	 while (s[i] != '\0')
 
-	for (s[i] && strchr(accept, s[i]););
-	{
-		i++;
-
-		return (i);
-	}
-
+	 {
+		 while (accept[j] != '\0')
+		 {
+			 if (s[i] == accept[j])
+			 {
+				 break;
+			 }
+			 j++;
+		 }
+		 i++;
+	 }
+	 return (i);
 }
-
