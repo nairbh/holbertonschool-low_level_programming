@@ -5,8 +5,22 @@
 char *_strchr(char *s, char c)
 
 {
-	char *c;
-	memcpy(c, s, 1);
+	
+	while (*s != '\0')
 
-	return (c);
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+
+		else if(c == '\0')
+		{
+			return (c);
+
+		}
+	}
+
+
+	return (NULL);
 }
