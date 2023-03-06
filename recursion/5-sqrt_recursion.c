@@ -2,7 +2,7 @@
 #include "main.h"
 
 
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n, int x)
 
 
 {
@@ -13,7 +13,6 @@ int _sqrt_recursion(int n)
 
 		return (n);
 
-	int x;
        x = _sqrt_recursion(n / 4) * 2;
 
 	if ((x + 1) * (x + 1) <= n && n < (x + 2) * (x + 2))
