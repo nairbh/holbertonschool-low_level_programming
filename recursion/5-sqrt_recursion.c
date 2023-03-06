@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
 	x = n;
 	y = 1;
 
-	if (x - y > 0;)
+	if (x - y > 0)
 	{
 		x += y / 2;
 		y = n / x;
