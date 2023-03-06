@@ -14,11 +14,10 @@ int _sqrt_help(int n, int x, int y)
 
 }
 
-	int _sqrt_help(int n, int x, int y)
 
+	if (x - x <= 0)
 	{
-		if (x - x <= 0)
-		return (x);
+	return (x);
 
 		x += y / 2;
 
