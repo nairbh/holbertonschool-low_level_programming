@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
 	x = n;
 	y = 1;
 
-	for (x - y > 0)
+	for (x - y > 0;)
 	{
 		x += y / 2;
 		y = n / x;
