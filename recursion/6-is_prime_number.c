@@ -10,7 +10,7 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	return (is_prime_find(n, 2);
+	return (is_prime_find(n, 2));
 }
 
 
@@ -27,5 +27,5 @@ int is_prime_find(int n, int i)
 		return(0);
 	}
 
-		return (is_prime_find(n, i + 1);
+		return (is_prime_find(n, i + 1));
 }
