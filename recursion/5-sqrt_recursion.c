@@ -5,12 +5,14 @@
 int _sqrt_recursion(int n)
 
 {
+	int x, y;
+
 	if (n < 0)
 
 		return (-1);
 
-	int x = n;
-	int y = 1;
+	x = n;
+	y = 1;
 
 	while (x - y > 0)
 	{
