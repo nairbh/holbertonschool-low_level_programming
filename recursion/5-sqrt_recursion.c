@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include "main.h"
 
+int _sqrt_help(int n, int x, int y)
 
-int _sqrt_recursion(int n, int x)
-
+	int _sqtr_recursion(int n)
 
 {
 	if (n < 0)
+
 		return (- 1);
 
-	if (n == 0 || n == 1)
+	return (_sqrt_help(n, n, 1);
 
-		return (n);
-
-       x = _sqrt_recursion(n / 4) * 2;
-
-	if ((x + 1) * (x + 1) <= n && n < (x + 2) * (x + 2))
-
-		return (x + 1);
-
-	else 
-		return (x);
 }
+
+	int _sqrt_help(int n, int x, int y)
+
+	{
+		if (x - x <= 0)
+		return (x);
+
+		x += y / 2;
+
+		y = n / x;
+
+		return(_sqrt_help(n, x, y));
+	}
