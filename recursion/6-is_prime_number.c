@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * is_prime_find - detects if an input number is a prime number.
+ * is_prime_number - detects if an input number is a prime number.
  * @n: input number.
  * @i: iterator.
  * Return: 0 if n is not a prime number.
