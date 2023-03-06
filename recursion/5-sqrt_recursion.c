@@ -4,21 +4,21 @@
 
 int _sqrt_recursion(int n)
 
+
 {
-	int x, y;
-
 	if (n < 0)
+		return (- 1);
 
-		return (-1);
+	if (n == 0 || n == 1)
 
-	x = n;
-	y = 1;
+		return (n);
 
-	if (x - y > 0)
-	{
-		x += y / 2;
-		y = n / x;
-	}
+	int x = _sqrt_recursion(n / 4) * 2;
 
-	return (x);
+	if ((x + 1) * (x + 1) <= n && n < (x + 2) * (x + 2))
+
+		return (x + 1);
+
+	else 
+		return (x);
 }
