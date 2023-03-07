@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 
 {
-	int num1, num2, resultat;
+	int num1, num2;
 	if(argc != 3)
 
 	{
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	num2 = atoi(argv[2]);
 
-	printf("%d", atoi(argv[1]) * atoi(argv[2]));
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
 	return (0);
 }
