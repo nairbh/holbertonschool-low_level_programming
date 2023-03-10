@@ -38,7 +38,7 @@ int get_number(int argc, char *argv[])
 }
 
 /**
- * get_number - adds positive numbers.
+ * main - adds positive numbers.
  * @argc: number of command line arguments.
  * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
