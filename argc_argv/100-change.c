@@ -12,44 +12,29 @@ int main(int argc, char *argv[])
 	int montant;
 
 	if (argc != 2)
-
 	{
-	printf("Erreur\n");
-
+	printf("Error\n");
 	return (1);
 	}
 
-       	montant = atoi(argv[1]);
+	montant = atoi(argv[1]);
 
 	if (montant < 0)
-
 	{
 	printf("0\n");
 
-	return 0;
+	return (0);
 	}
-
 	nombre_pieces = 0;
-
 	nombre_pieces += montant / 25;
-
 	montant = montant % 25;
-
 	nombre_pieces += montant / 10;
-
 	montant = montant % 10;
-
 	nombre_pieces += montant / 5;
-
 	montant = montant % 5;
-
 	nombre_pieces += montant / 2;
-
 	montant = montant % 2;
-
 	nombre_pieces += montant / 1;
-
 	printf("%d\n", nombre_pieces);
-
 	return (0);
 }
