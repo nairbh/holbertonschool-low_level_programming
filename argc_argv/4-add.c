@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * main - adds positive numbers.
+ * get_number - adds positive numbers.
  * @argc: number of command line arguments.
  * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
@@ -37,7 +37,12 @@ int get_number(int argc, char *argv[])
 	return (0);
 }
 
-
+/**
+ * get_number - adds positive numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
+ */
 int main(int argc, char *argv[])
 
 {
