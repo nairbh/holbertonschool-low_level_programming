@@ -9,13 +9,14 @@
 */
 int main(int argc, char *argv[])
 {
+	int nombre_pieces;
+	int montant;
 	if (argc != 2)
 	{
 	printf("Erreur\n");
 	return (1);
 	}
 
-	int montant;
        	montant = atoi(argv[1]);
 
 	if (montant < 0)
@@ -24,7 +25,6 @@ int main(int argc, char *argv[])
 	return 0;
 	}
 
-	int nombre_pieces;
        	nombre_pieces = 0;
 	nombre_pieces += montant / 25;
 	montant = montant % 25;
