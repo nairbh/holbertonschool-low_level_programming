@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 	return (1);
 	}
 
-	int montant = atoi(argv[1]);
+	int montant;
+       	montant = atoi(argv[1]);
 
 	if (montant < 0)
 	{
@@ -23,7 +24,8 @@ int main(int argc, char *argv[])
 	return 0;
 	}
 
-	int nombre_pieces = 0;
+	int nombre_pieces;
+       	nombre_pieces = 0;
 	nombre_pieces += montant / 25;
 	montant = montant % 25;
 	nombre_pieces += montant / 10;
