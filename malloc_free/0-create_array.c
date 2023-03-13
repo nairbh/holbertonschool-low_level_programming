@@ -5,15 +5,15 @@ char *create_array(unsigned int size, char c)
 
 {
 	char *array;
-	unsigned i;
+	unsigned int i;
 
-	if (size == NULL)
+	if (size == 0)
 
 	{
 		return (NULL);
 	}
 
-	*array = malloc(size * sizeof(char));
+	array = malloc(size * sizeof(char));
 
 
 	if (array == NULL)
