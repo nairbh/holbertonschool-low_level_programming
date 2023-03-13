@@ -8,19 +8,17 @@ char *str_concat(char *s1, char *s2)
 {
 	
 	char *result;
-	size_t len1 =  strlen(s1);
 
-	size_t len2 = strlen(s2);
-	
-	if (!s1) 
+	if (!s1)
 	{
 		s1 = "";
 	}
-	if (!s2) 
+	if (!s2)
 	{
 		s2 = "";
 	}
-
+	size_t len1 = strlen(s1);
+	size_t len2 = strlen(s2);
 	result = malloc((len1 + len2 + 1) * sizeof(char));	
 	if (!result)
 	{
