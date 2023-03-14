@@ -7,6 +7,8 @@
  * @str: string.
  *
  * Return: pointer of an array of chars
+ *  __maxlen: max memcpy
+ *  __string: string to copy
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *_strdup(char *str)
