@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 #include <string.h>
+/**
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ *
+ * Return: pointer of an array of chars
+ */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *_strdup(char *str)
 
