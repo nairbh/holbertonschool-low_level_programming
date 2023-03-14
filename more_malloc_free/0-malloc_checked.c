@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "main.h"
 void *malloc_checked(unsigned int b)
 {
     void *ptr = malloc(b);
