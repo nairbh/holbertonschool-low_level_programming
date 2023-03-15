@@ -11,12 +11,14 @@
  * the concatenated string, or NULL if it fails.
  *
  *
- * strnlen - calculates the length of a fixed-size string.
- * @__string: the string to measure.
- * @__maxlen: the maximum length of the string to measure.
- *
- * Return: the length of the string, up to a maximum of @__maxlen characters.
- */
+ strnlen - Calculate the length of a string, but not more than a given
+maximum length.
+@str: The string to measure.
+@maxlen: The maximum number of characters to examine.
+Return: The number of characters in the string, not counting the null
+terminator. If @maxlen is reached, the function stops counting and
+returns @maxlen.
+*/
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)
 
