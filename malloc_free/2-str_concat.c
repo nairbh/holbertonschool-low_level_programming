@@ -6,9 +6,9 @@
  * str_concat - Concatenates two strings
  * @s1: The first string
  * @s2: The second string
- *
- * Return: A pointer to a newly allocated space in memory containing the
- * concatenated strings, or NULL on failure
+ * * strnlen - calculates the length of a string, up to a given maximum size.
+ * @maxlen: the maximum number of characters to check for the length.
+ * Return: the length of the string, up to a maximum of @maxlen characters.
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)
