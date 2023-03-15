@@ -3,11 +3,12 @@
 #include "main.h"
 #include <string.h>
 /**
- * str_concat - concatenates two strings.
- * @s1: first string.
- * @s2: second string.
+ * str_concat - Concatenates two strings
+ * @s1: The first string
+ * @s2: The second string
  *
- * Return: pointer of an array of chars
+ * Return: A pointer to a newly allocated space in memory containing the
+ * concatenated strings, or NULL on failure
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)

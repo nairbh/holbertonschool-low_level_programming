@@ -6,9 +6,7 @@
  * _strdup - returns a pointer to a newly allocated space in memory.
  * @str: string.
  *
- * Return: pointer of an array of chars
- *  __maxlen: max memcpy
- *  __string: string to copy
+ * Return: pointer to a new string which is a duplicate of the string str.
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *_strdup(char *str)
