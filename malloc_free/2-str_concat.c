@@ -9,6 +9,13 @@
  *
  * Return: pointer to a newly allocated space in memory containing
  * the concatenated string, or NULL if it fails.
+ *
+ *
+ * strnlen - calculates the length of a fixed-size string.
+ * @__string: the string to measure.
+ * @__maxlen: the maximum length of the string to measure.
+ *
+ * Return: the length of the string, up to a maximum of @__maxlen characters.
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)
