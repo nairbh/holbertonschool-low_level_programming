@@ -8,41 +8,36 @@
  *
  * Return: pointer of an array of integers
  */
-
 int **alloc_grid(int width, int height)
-
 {
-	int i, j;
 	int **grid;
+	int i, j;
 
-	if (width <= 0 || height <= 0)
-
-	{
+	if (width < 1 || height < 1)
 		return (NULL);
-	}
 
 	grid = malloc(height * sizeof(int *));
-
-	if (grid == 0)
+	if (grid == NULL)
 	{
+		free(grid);
 		return (NULL);
 	}
-
 
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = calloc(width, sizeof(int));
-		
+		grid[i] = malloc(width * sizeof(int));
 		if (grid[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
-			
-			{
-			gridout[i][j] = 0;
-			}
+			for (i--; i >= 0; i--)
+				free(grid[i]);
 			free(grid);
-    			return (NULL);
+			return (NULL);
 		}
 	}
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			grid[i][j] = 0;
+
 	return (grid);
 }
