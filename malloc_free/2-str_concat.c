@@ -3,12 +3,12 @@
 #include "main.h"
 #include <string.h>
 /**
- * str_concat - Concatenates two strings
- * @s1: The first string
- * @s2: The second string
- * * strnlen - calculates the length of a string, up to a given maximum size.
- * @maxlen: the maximum number of characters to check for the length.
- * Return: the length of the string, up to a maximum of @maxlen characters.
+ * str_concat - concatenates two strings.
+ * @s1: first string to concatenate.
+ * @s2: second string to concatenate.
+ *
+ * Return: pointer to a newly allocated space in memory containing
+ * the concatenated string, or NULL if it fails.
  */
 extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)
