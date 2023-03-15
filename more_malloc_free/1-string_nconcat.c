@@ -10,8 +10,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	size_t len1;
 	size_t len2;
 
-	if (s1 == NULL) return (NULL);
-	if (s2 == NULL) return (NULL);
+	if (s1 == NULL) s1 = "";
+	if (s2 == NULL) s2 = "";
 
 	len1 = strlen(s1);
 	len2 = strlen(s2);
