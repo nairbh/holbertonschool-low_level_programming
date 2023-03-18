@@ -14,7 +14,6 @@ char *argstostr(int ac, char **av)
 	size_t sum = 0;
 	char *letter;
 	size_t i;
-	size_t a;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
@@ -34,9 +33,9 @@ for (i = 0; i < (size_t)ac; i++)
 }
 	ptr = letter;
 
-	for (a = 0; a < (size_t)ac; a++)
+	for (i = 0; i < (size_t)ac; i++)
 {
-	strcpy(ptr, av[a]);
+	strcpy(ptr, av[i]);
 	ptr += strlen(av[i]);
 	*ptr++ = '\n';
 }
