@@ -9,7 +9,6 @@
  *
  * Return: pointer of an array of chars
  */
-extern size_t strnlen(const char *__string, size_t __maxlen);
 char *str_concat(char *s1, char *s2)
 {
 	size_t len1 = s1 ? strlen(s1) : 0;
