@@ -10,7 +10,6 @@
  * Return: A pointer to the duplicated string, or NULL if memory allocation
  *         fails or `str` is NULL.
  */
-extern size_t strnlen(const char *__string, size_t __maxlen);
 char *_strdup(char *str)
 
 {
