@@ -9,7 +9,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	if (*s == '\0' || (*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%'))
+	if (*s == '\0')
 	{
 		printf("Error\n");
 		exit(99);
