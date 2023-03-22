@@ -8,6 +8,11 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
+	if (*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%')
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	return ((*s == '+') ? &op_add :
 		(*s == '-') ? &op_sub :
 		(*s == '*') ? &op_mul :
