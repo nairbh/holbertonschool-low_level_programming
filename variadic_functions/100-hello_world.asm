@@ -1,9 +1,9 @@
 section .data
 	msg db "Hello, World", 0Ah
 	section .text
-	global _start
+	global main
 
-_start:
+main:
 	mov edx, 13 ; length of the message
 	mov ecx, msg ; pointer to the message
 	mov ebx, 1 ; file descriptor for stdout
