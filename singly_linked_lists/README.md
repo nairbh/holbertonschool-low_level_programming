@@ -36,7 +36,7 @@ Here is an example of the output of the program:
 </p>
 <h3> Author </h3>
 <p>
-Your Name
+Nairbh
 </p>
 <h3> Repository </h3>
 <p>
