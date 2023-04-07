@@ -36,5 +36,5 @@ Nairbh
 <h3> Repository </h3>
 <p>
 GitHub repository: holbertonschool-low_level_programming
-Directory: singly_linked_lists
+Directory: double_linked_lists
 </p>
