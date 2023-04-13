@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * error_file - check file fail
  * @file_to: destination
