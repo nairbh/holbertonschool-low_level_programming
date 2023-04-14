@@ -20,7 +20,7 @@ printf("{");
 	node = ht->array[i];
 
 		while (node)
-		
+
 		{
 		if (flag == 1)
 			printf(", ");
