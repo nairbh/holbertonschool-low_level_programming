@@ -22,7 +22,7 @@ printf("{");
 	while (node)
 		{
 		if (flag == 1)
-		printf(",\t");
+
 		printf("'%s': '%s'", node->key, node->value);
 			node = node->next;
 			flag = 1;
