@@ -63,6 +63,6 @@ int **allocate_map(int n, int m)
 
 ### Authors
 <a href="https://github.com/nairbh"><img src="https://zupimages.net/up/23/21/rskr.jpeg" alt="Nairbh" width="100" height="100" style="border-radius: 50%;"></a> 
-:---:|:---:
+:---:
 [Nairbh](https://github.com/nairbh)
 
