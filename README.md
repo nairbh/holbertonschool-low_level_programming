@@ -1,3 +1,5 @@
+![331125_630361](https://user-images.githubusercontent.com/124582867/229380110-7673c718-e712-4ac6-aa56-c816d5535188.png)
+
 # Low-level programming & Algorithm
 
 Module of **Low-level programming** and **algorithm**, carried out during **Full Stack Software Engineering studies** at **[Holberton School](https://www.holbertonschool.com/)**.
