@@ -15,7 +15,7 @@ All of the following folders are projects done during the studies:
 
 | Project name | Description |
 | ------------ | ----------- |
-| [`hello_world`](https://github.com/nairbh/holbertonschool-low_level_programming/tree/master/hello_world)) | It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in **C language** |
+| [`hello_world`](https://github.com/nairbh/holbertonschool-low_level_programming/tree/master/hello_world) | It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in **C language** |
 | [`variables_if_else_while`](https://github.com/nairbh/holbertonschool-low_level_programming/tree/master/variables_if_else_while) | It aims to learn about arithmetic operators, relational operators, boolean operators, comments, declaring variables and loops in **C language** |
 | [`functions_nested_loops`](https://github.com/nairbh/holbertonschool-low_level_programming/tree/master/functions_nested_loops) | It aims to learn about header files, functions, loops and nested loops in **C language** |
 | [`debugging`]() | It aims to learn how to debug in **C language** |
