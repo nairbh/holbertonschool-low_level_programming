@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <sys/stat.h>
-
 /**
  * main - entry point
  * @argc: numbers of arguments
@@ -29,9 +28,10 @@ int from_source(const char *filename)
 int main(int argc, char **argv)
 {
 	mode_t oldmask = umask(0);
-	int to_fd, readed, writed;
+	int to_fd, readed, writed, from_fd;
 	char size[1024];
 	argc_error(argc);
+	from_fd = open_source_file(argv[1]);
 	to_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	umask(oldmask);
 	
