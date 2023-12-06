@@ -1,64 +1,60 @@
 #include "main.h"
-/**
- * error_file - check file fail
- * @file_to: destination
- * @file_from: source
- * @argv: argument vector
- */
-void error_file(int file_from, int file_to, char *argv[])
-{
-	if (file_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		/*stderr_fileno = 2*/
-		exit(98);
-	}
-	if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
-	}
-}
+#include <stdio.h>
+#include <sys/stat.h>
 
 /**
- * main - check code
- * @argc: number of argument
- * @argv: argument vector
- * Return: 0 if success
- */
-int main(int argc, char *argv[])
-{
-	int src, dest, err_close;
-	int len, nwr;
-	char buf[1024];
+ * main - entry point
+ * @argc: numbers of arguments
+ * @argv: arguments
+ * Return: int
+*/
+int main(int argc, char **argv)
+{mode_t oldmask = umask(0);
+	int from_fd, to_fd, readed, writed;
+	char size[1024];
 
 	if (argc != 3)
 	{
-		dprintf(2, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	src = open(argv[1], O_RDONLY);
-	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	/*TRUNC = cause the files to be truncated if it exists */
-	error_file(src, dest, argv);
-
-	len = 1024;
-	while (len == 1024)
+	from_fd = open(argv[1], O_RDONLY);
+	if (!argv[1] || from_fd == -1)
 	{
-		len = read(src, buf, 1024);
-		if (len == -1)
-			error_file(-1, 0, argv);
-		nwr = write(dest, buf, len);
-		if (nwr == -1)
-			error_file(0, -1, argv);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
-	err_close = close(src);
-	err_close = close(dest);
-	if (err_close == -1)
+	
+	to_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	umask(oldmask);
+	
+	while ((readed = read(from_fd, size, 1024)) > 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src);
+		writed = write(to_fd, size, readed);
+		if (writed != readed || writed == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(from_fd);
+			close(to_fd);
+			exit(99);
+		}
+	}
+	if (readed == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+		close(from_fd);
+		close(to_fd);
+		exit(98);
+	}
+	if (close(from_fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from_fd);
 		exit(100);
-		/*dprintf = print to file descriptor*/
+	}
+	if (close(to_fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to_fd);
+		exit(100);
 	}
 	return (0);
 }
