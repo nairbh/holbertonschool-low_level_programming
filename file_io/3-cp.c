@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <sys/stat.h>
-
 /**
  * main - entry point
  * @argc: numbers of arguments
