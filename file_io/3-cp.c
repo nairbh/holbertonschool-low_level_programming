@@ -21,12 +21,13 @@ void argc_error(int argc)
 int from_source(const char *filename)
 {
 	int from_fd = open(filename, O_RDONLY);
+
 	if (!filename || from_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
-	return from_fd;
+	return (from_fd);
 }
 
 /**
@@ -74,5 +75,5 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to_fd);
 		exit(100);
 	}
-	return 0;
+	return (0);
 }
