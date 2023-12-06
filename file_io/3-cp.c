@@ -8,23 +8,30 @@
  * @argv: arguments
  * Return: int
 */
-int main(int argc, char **argv)
-{mode_t oldmask = umask(0);
-	int from_fd, to_fd, readed, writed;
-	char size[1024];
-
+void argc_error(int argc)
+{
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	from_fd = open(argv[1], O_RDONLY);
+}
+int from_source(const char *filename)
+{
+		from_fd = open(argv[1], O_RDONLY);
 	if (!argv[1] || from_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	
+	return (from_fd);
+}
+int main(int argc, char **argv)
+{
+	mode_t oldmask = umask(0);
+	int from_fd, to_fd, readed, writed;
+	char size[1024];
+	argc_error(argc);
 	to_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	umask(oldmask);
 	
